@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <!-- Lütfen Api Key Giriniz -->
+  <div class="container" id="login_bro">
+    <div class="screen">
+        <div class="screen__content">
+          <div class="login" id="login">
+            <div class="login__field">
+              <i class="login__icon fas fa-user"></i>
+              <input type="email" name="textt" id="mail" class="login__input" placeholder="Email" required>
+            </div>
+            <div class="login__field">
+              <i class="login__icon fas fa-lock"></i>
+              <input type="password" name="pass" id="pass" class="login__input" placeholder="Password" required>
+            </div>
+            <button class="button login__submit" id="sbmt">
+              <span class="button__text">Log In Now</span>
+              <i class="button__icon fas fa-chevron-right"></i>
+            </button>				
+          </div>
+          <!-- <textarea id="id_response" cols="30" rows="10"></textarea> -->
+          <div class="social-login">
+            <h3>Social media</h3>
+            <div class="social-icons">
+              <a href="https://www.instagram.com/cna_adam/" class="social-login__icon fab fa-instagram" target="_blank"></a>
+              <a href="https://discord.gg/6UfqQvw9WS" class="social-login__icon fab fa-discord" target="_blank"></a>
+              <a href="https://github.com/fastuptime" class="social-login__icon fab fa-github" target="_blank"></a>
+              <a href="https://www.youtube.com/channel/UCOBPKI0p2_zpJHydUBu99hg" class="social-login__icon fab fa-youtube" target="_blank"></a>
+              <a href="https://twitter.com/FastUptime" class="social-login__icon fab fa-twitter" target="_blank"></a>
+            </div>
+          </div>
+        </div>
+        <div class="screen__background">
+          <span class="screen__background__shape screen__background__shape4"></span>
+          <span class="screen__background__shape screen__background__shape3"></span>		
+          <span class="screen__background__shape screen__background__shape2"></span>
+          <span class="screen__background__shape screen__background__shape1"></span>
+        </div>
+      </div>
+  </div>
+  <!-- Login Ok -->
+  <div class="container" id="nice_login" style="display: none;">
+    <div class="screen">
+        <div class="screen__content">
+          <div class="login" id="login">
+            <!-- Hi can welcome to xxx -->
+            <p class="login__welcome" id="hi_cna">👋 Hi, </p>
+            <div class="login__field">
+              <i class="fa-solid fa-link" id="icon_uzunurl"></i>
+              <!-- short_url display -->
+              <input type="text" name="textt" id="short_url" class="login__input" placeholder="Short URL" style="display: none;" disabled>
+              <!-- Copy button -->
+              <button class="button login__submit" id="copy_btn" style="display: none;">
+                <span class="button__text">Copy</span>
+                <i class="button__icon fas fa-copy"></i>
+              </button>
+              <input type="url" id="uzun_url" class="url__input" placeholder="Long Link" required>
+            </div>
+            <button class="button login__submit" id="short_sbmt">
+              <span class="button__text">Shorten Link</span>
+              <i class="button__icon fas fa-chevron-right"></i>
+            </button>
+            <!-- Logout button p -->
+            <p class="login__logout" id="new_link" style="display: none; color: black;">
+              <i class="fa-solid fa-plus"></i>
+              New short link
+            </p>
+            <p class="login__logout" id="logout">
+              <i class="fa-solid fa-right-from-bracket"></i>
+              Logout
+            </p>
+          </div>
+          <!-- <textarea id="id_response" cols="30" rows="10"></textarea> -->
+          <div class="social-login">
+            <h3>Social media</h3>
+            <div class="social-icons">
+              <a href="https://www.instagram.com/cna_adam/" class="social-login__icon fab fa-instagram" target="_blank" title="Instagram"></a>
+              <a href="https://discord.gg/6UfqQvw9WS" class="social-login__icon fab fa-discord" target="_blank" title="Discord Server"></a>
+              <a href="https://github.com/fastuptime" class="social-login__icon fab fa-github" target="_blank" title="GitHub"></a>
+              <a href="https://www.youtube.com/channel/UCOBPKI0p2_zpJHydUBu99hg" class="social-login__icon fab fa-youtube" target="_blank" title="YouTube"></a>
+              <a href="https://twitter.com/FastUptime" class="social-login__icon fab fa-twitter" target="_blank" title="Twitter"></a>
+            </div>
+          </div>
+        </div>
+        <div class="screen__background">
+          <span class="screen__background__shape screen__background__shape4"></span>
+          <span class="screen__background__shape screen__background__shape3"></span>		
+          <span class="screen__background__shape screen__background__shape2"></span>
+          <span class="screen__background__shape screen__background__shape1"></span>
+        </div>
+      </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

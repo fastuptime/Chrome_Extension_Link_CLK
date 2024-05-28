@@ -1,0 +1,23 @@
+{
+    "name": "Short Link Earn Money! - Linkclk.Net",
+    "description": "Earn money by shortening your links and sharing them on social media.",
+    "author": "Linkclk.Net",
+    "version": "1.0",
+    "manifest_version": 3,
+    "host_permissions": [
+        "http://*/*",
+        "https://*/*",
+        "*://*/*"
+    ],
+    "icons": {
+        "128": "images/icon128.png"
+    },
+    "permissions": [
+        "activeTab",
+        "tabs",
+        "storage"
+    ],
+    "action": {
+        "default_popup": "./index.html"
+    }
+}
